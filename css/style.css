@@ -1,0 +1,3285 @@
+/*
+  Theme Name: University - Education HTML Template
+  Author: #Themeforest Does Not Account But Will Open Soon.
+  Author Email: mdrabiulislam300040@gmail.com
+  Support: mdrabiulislam300040@gmail.com
+  Description: Creative  HTL5 Template.
+  Version: 1.0
+*/
+
+/* CSS Table of Contant
+-----------------------------------
+01. Theme default
+02. HEADER PART
+03. SLIDER PART
+04. CATEGORY PART
+05. ABOUT PART
+06. APPLY PART
+07. COURSE PART
+08. VIDEO FEATURES PART
+09. NEWS PART
+10. FOOTER PART
+11. CATEGORY PART-2
+12. COURSE PART-2
+13. COUNTER PART
+14. EVENT PART-2
+15. COUNT DOWN PART
+16. PAGE BANNER PART
+17. ABOUT PAGE PART
+18. COURSES PAGE PART
+19. EVENT SINGEL PAGE PART
+20. BLOG PAGE PART
+21. BLOG SINGEL PAGE PART
+22. CONTACT PART
+23. FAQ PART
+24. PRIVACY POLICY PART
+25. LOGIN/REGISTER PART
+*/
+
+/*=====================================================
+    1. Theme default css start
+=====================================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+i,
+span,
+a {
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #1d2025;
+    margin: 0px;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #505050;
+    margin: 0px;
+}
+
+.bg_cover {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+/*===== All Button Style =====*/
+
+.main-btn {
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #ffc600;
+    padding: 0 35px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 50px;
+    border-radius: 5px;
+    color: #07294d;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    background-color: #ffc600;
+}
+
+.main-btn:hover {
+    color: #ffc600;
+    border-color: #07294d;
+    background-color: #07294d;
+}
+
+.main-btn-2 {
+    color: #ffc600;
+    border-color: #07294d;
+    background-color: #07294d;
+}
+
+.main-btn-2:hover {
+    color: #07294d;
+    background-color: #ffc600;
+    border-color: #ffc600;
+}
+
+/*===== All Section Title Style =====*/
+
+.section-title {}
+
+.section-title h5 {
+    color: #07294d;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.section-title h5::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background-color: #ffc600;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: all .4s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+.section-title h5:hover:before {
+    width: 150px;
+}
+
+.section-title h2 {
+    font-size: 48px;
+    color: #000;
+    padding-top: 10px;
+}
+
+/*===== Preloader Style =====*/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.preloader .color-1 {
+    background-color: #ffc600 !important;
+}
+
+.rubix-cube {
+    border: 1px solid #FFF;
+    width: 48px;
+    height: 48px;
+    background-color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.rubix-cube .layer {
+    width: 14px;
+    height: 14px;
+    background-color: #07294d;
+    border: 1px solid #FFF;
+    position: absolute;
+}
+
+.rubix-cube .layer-1 {
+    left: 0px;
+    top: 0px;
+    -webkit-animation: rubixcube4 2s infinite linear;
+    animation: rubixcube4 2s infinite linear;
+}
+
+.rubix-cube .layer-2 {
+    left: 16px;
+    top: 0px;
+    -webkit-animation: rubixcube3 2s infinite linear;
+    animation: rubixcube3 2s infinite linear;
+}
+
+.rubix-cube .layer-3 {
+    left: 32px;
+    top: 0px;
+}
+
+.rubix-cube .layer-4 {
+    left: 0px;
+    top: 16px;
+    -webkit-animation: rubixcube5 2s infinite linear;
+    animation: rubixcube5 2s infinite linear;
+}
+
+.rubix-cube .layer-5 {
+    left: 16px;
+    top: 16px;
+    -webkit-animation: rubixcube2 2s infinite linear;
+    animation: rubixcube2 2s infinite linear;
+}
+
+.rubix-cube .layer-6 {
+    left: 32px;
+    top: 16px;
+    -webkit-animation: rubixcube1 2s infinite linear;
+    animation: rubixcube1 2s infinite linear;
+}
+
+.rubix-cube .layer-7 {
+    left: 0px;
+    top: 32px;
+    -webkit-animation: rubixcube6 2s infinite linear;
+    animation: rubixcube6 2s infinite linear;
+}
+
+.rubix-cube .layer-8 {
+    left: 16px;
+    top: 32px;
+    -webkit-animation: rubixcube7 2s infinite linear;
+    animation: rubixcube7 2s infinite linear;
+}
+
+@-webkit-keyframes rubixcube1 {
+    20% {
+        top: 16px;
+        left: 32px;
+    }
+
+    30% {
+        top: 32px;
+        left: 32px;
+    }
+
+    40% {
+        top: 32px;
+        left: 32px;
+    }
+
+    50% {
+        top: 32px;
+        left: 32px;
+    }
+
+    60% {
+        top: 32px;
+        left: 32px;
+    }
+
+    70% {
+        top: 32px;
+        left: 32px;
+    }
+
+    80% {
+        top: 32px;
+        left: 32px;
+    }
+
+    90% {
+        top: 32px;
+        left: 32px;
+    }
+
+    100% {
+        top: 32px;
+        left: 16px;
+    }
+}
+
+@keyframes rubixcube1 {
+    20% {
+        top: 16px;
+        left: 32px;
+    }
+
+    30% {
+        top: 32px;
+        left: 32px;
+    }
+
+    40% {
+        top: 32px;
+        left: 32px;
+    }
+
+    50% {
+        top: 32px;
+        left: 32px;
+    }
+
+    60% {
+        top: 32px;
+        left: 32px;
+    }
+
+    70% {
+        top: 32px;
+        left: 32px;
+    }
+
+    80% {
+        top: 32px;
+        left: 32px;
+    }
+
+    90% {
+        top: 32px;
+        left: 32px;
+    }
+
+    100% {
+        top: 32px;
+        left: 16px;
+    }
+}
+
+@-webkit-keyframes rubixcube2 {
+    30% {
+        left: 16px;
+    }
+
+    40% {
+        left: 32px;
+    }
+
+    50% {
+        left: 32px;
+    }
+
+    60% {
+        left: 32px;
+    }
+
+    70% {
+        left: 32px;
+    }
+
+    80% {
+        left: 32px;
+    }
+
+    90% {
+        left: 32px;
+    }
+
+    100% {
+        left: 32px;
+    }
+}
+
+@keyframes rubixcube2 {
+    30% {
+        left: 16px;
+    }
+
+    40% {
+        left: 32px;
+    }
+
+    50% {
+        left: 32px;
+    }
+
+    60% {
+        left: 32px;
+    }
+
+    70% {
+        left: 32px;
+    }
+
+    80% {
+        left: 32px;
+    }
+
+    90% {
+        left: 32px;
+    }
+
+    100% {
+        left: 32px;
+    }
+}
+
+@-webkit-keyframes rubixcube3 {
+    30% {
+        top: 0px;
+    }
+
+    40% {
+        top: 0px;
+    }
+
+    50% {
+        top: 16px;
+    }
+
+    60% {
+        top: 16px;
+    }
+
+    70% {
+        top: 16px;
+    }
+
+    80% {
+        top: 16px;
+    }
+
+    90% {
+        top: 16px;
+    }
+
+    100% {
+        top: 16px;
+    }
+}
+
+@keyframes rubixcube3 {
+    30% {
+        top: 0px;
+    }
+
+    40% {
+        top: 0px;
+    }
+
+    50% {
+        top: 16px;
+    }
+
+    60% {
+        top: 16px;
+    }
+
+    70% {
+        top: 16px;
+    }
+
+    80% {
+        top: 16px;
+    }
+
+    90% {
+        top: 16px;
+    }
+
+    100% {
+        top: 16px;
+    }
+}
+
+@-webkit-keyframes rubixcube4 {
+    50% {
+        left: 0px;
+    }
+
+    60% {
+        left: 16px;
+    }
+
+    70% {
+        left: 16px;
+    }
+
+    80% {
+        left: 16px;
+    }
+
+    90% {
+        left: 16px;
+    }
+
+    100% {
+        left: 16px;
+    }
+}
+
+@keyframes rubixcube4 {
+    50% {
+        left: 0px;
+    }
+
+    60% {
+        left: 16px;
+    }
+
+    70% {
+        left: 16px;
+    }
+
+    80% {
+        left: 16px;
+    }
+
+    90% {
+        left: 16px;
+    }
+
+    100% {
+        left: 16px;
+    }
+}
+
+@-webkit-keyframes rubixcube5 {
+    60% {
+        top: 16px;
+    }
+
+    70% {
+        top: 0px;
+    }
+
+    80% {
+        top: 0px;
+    }
+
+    90% {
+        top: 0px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes rubixcube5 {
+    60% {
+        top: 16px;
+    }
+
+    70% {
+        top: 0px;
+    }
+
+    80% {
+        top: 0px;
+    }
+
+    90% {
+        top: 0px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@-webkit-keyframes rubixcube6 {
+    70% {
+        top: 32px;
+    }
+
+    80% {
+        top: 16px;
+    }
+
+    90% {
+        top: 16px;
+    }
+
+    100% {
+        top: 16px;
+    }
+}
+
+@keyframes rubixcube6 {
+    70% {
+        top: 32px;
+    }
+
+    80% {
+        top: 16px;
+    }
+
+    90% {
+        top: 16px;
+    }
+
+    100% {
+        top: 16px;
+    }
+}
+
+@-webkit-keyframes rubixcube7 {
+    80% {
+        left: 16px;
+    }
+
+    90% {
+        left: 0px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes rubixcube7 {
+    80% {
+        left: 16px;
+    }
+
+    90% {
+        left: 0px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+/*=====================================================
+    1. Theme default css end
+=====================================================*/
+
+
+/*=====================================================
+    2. HEADER PART css start 
+======================================================*/
+
+/*===== Header top =====*/
+
+.header-top {
+    background-color: #07294d;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header-contact ul li {
+    display: inline-block;
+    margin-right: 20px;
+    color: #c6c6c6;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header-contact ul li:last-child {
+    margin-right: 0;
+}
+
+.header-contact ul li i {
+    margin-right: 10px;
+}
+
+.header-contact ul li a {
+    color: #c6c6c6;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.header-right {}
+
+.header-right .social {}
+
+.header-right .social .follow-us {
+    font-size: 16px;
+    color: #c6c6c6;
+    padding-right: 10px;
+    font-weight: 500;
+}
+
+.header-right .social ul {}
+
+.header-right .social ul li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.header-right .social ul li a {
+    color: #c6c6c6;
+    font-size: 16px;
+}
+
+.header-right .social ul li a:hover {
+    color: #ffc600;
+}
+
+.login-register {}
+
+.login-register ul {}
+
+.login-register ul li {
+    display: inline-block;
+    margin-left: 25px;
+    position: relative;
+}
+
+.login-register ul li::before {
+    position: absolute;
+    content: '/';
+    color: #ffc600;
+    font-size: 16px;
+    top: 0;
+    left: -16px;
+}
+
+.login-register ul li:first-child::before {
+    display: none;
+}
+
+.login-register ul li a {
+    color: #ffc600;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.login-register ul li a:hover {
+    color: #fff;
+}
+
+/*===== Header Menu =====*/
+
+.navigation {}
+
+.navigation.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+    border-bottom: 1px solid #cecece;
+    -webkit-box-shadow: 0px 0px 191px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 0px 191px 0px rgba(0, 0, 0, 0.06);
+    -webkit-animation: sticky 2s;
+    animation: sticky 2s;
+}
+
+@-webkit-keyframes sticky {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+
+    100% {
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%)
+    }
+}
+
+@keyframes sticky {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+
+    100% {
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%)
+    }
+}
+
+.navigation .navbar {
+    padding: 0;
+}
+
+.navigation .navbar .navbar-brand img {
+    width: 75%;
+}
+
+.navigation .navbar .navbar-nav {
+    margin-right: 20px;
+}
+
+.navigation .navbar .navbar-nav li {
+    position: relative;
+}
+
+.navigation .navbar .navbar-nav li a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #07294d;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    padding: 25px 15px 25px 15px;
+    display: block;
+}
+
+.navigation .navbar .navbar-nav > li > a.active,
+.navigation .navbar .navbar-nav > li:hover > a {
+    color: #ffc600;
+}
+
+.navigation .navbar .navbar-nav li .sub-menu {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: #07294d;
+    width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    z-index: 99;
+}
+
+.navigation .navbar .navbar-nav li:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.navigation .navbar .navbar-nav li .sub-menu li {
+    margin-right: 0;
+}
+
+.navigation .navbar .navbar-nav li .sub-menu li a {
+    padding: 10px 15px;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+.navigation .navbar .navbar-nav li .sub-menu li a.active,
+.navigation .navbar .navbar-nav li .sub-menu li a:hover {
+    padding-left: 20px;
+    color: #ffc600;
+}
+
+.sub-nav-toggler {
+    display: none;
+}
+
+.navigation .navbar .navbar-nav li .sub-menu li:last-child a {
+    border-bottom: 0;
+}
+
+.navbar .navbar-toggler {
+    padding: 3px 8px;
+    margin: 18px 0;
+    -webkit-transform: all 0.4s linear;
+    transform: all 0.4s linear;
+}
+
+.navbar .navbar-toggler .icon-bar {
+    width: 30px;
+    height: 2px;
+    background-color: #07294d;
+    display: block;
+    margin: 5px 0;
+    position: relative;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.navbar .navbar-toggler.active .icon-bar:nth-of-type(1) {
+    -webkit-transform: rotate(46deg);
+    transform: rotate(46deg);
+    top: 7px;
+}
+
+.navbar .navbar-toggler.active .icon-bar:nth-of-type(2) {
+    opacity: 0;
+}
+
+.navbar .navbar-toggler.active .icon-bar:nth-of-type(3) {
+    -webkit-transform: rotate(134deg);
+    transform: rotate(134deg);
+    top: -7px;
+}
+
+.right-icon {}
+
+.right-icon ul li {
+    display: inline-block;
+    margin-right: 17px;
+    padding: 22px 0;
+}
+
+.right-icon ul li:last-child {
+    margin-right: 0;
+}
+
+.right-icon ul li a {
+    font-size: 18px;
+    color: #07294d;
+    position: relative;
+    padding-right: 7px;
+}
+
+/*===== HEADER TOW =====*/
+
+.header-two {}
+
+.header-two .header-top {
+    background-color: #fff;
+    border-bottom: 1px solid #edf0f2;
+}
+
+.header-two .header-contact ul li {
+    color: #07294d;
+}
+
+.header-two .header-contact ul li a {
+    color: #07294d;
+}
+
+.header-two .header-right .social .follow-us {
+    color: #07294d;
+}
+
+.header-two .header-right .social ul li a {
+    color: #07294d;
+}
+
+.header-two .header-right .social ul li a:hover {
+    color: #ffc600;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.header-two .login-register ul li a {
+    color: #07294d;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 18px;
+    background: #ffc600;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.header-two .login-register ul li a:hover {
+    background: #07294d;
+    color: #fff;
+}
+
+.header-two .login-register ul li::before {
+    display: none;
+}
+
+.header-two .login-register ul li {
+    margin-left: 10px;
+}
+
+.header-two .header-right .social {
+    margin-top: 5px;
+}
+
+.header-two .navigation .navbar .navbar-nav li .sub-menu {
+    background-color: #fff;
+}
+
+.header-two .navigation .navbar .navbar-nav li .sub-menu li a {
+    border-bottom: 1px solid #edeff2;
+    color: #07294d;
+}
+
+.header-two .navigation .navbar .navbar-nav li .sub-menu li a.active,
+.header-two .navigation .navbar .navbar-nav li .sub-menu li a:hover {
+    color: #ffc600;
+}
+
+/*===== HEADER THREEE =====*/
+
+.header-three {}
+
+.header-three .navigation {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    padding: 10px 0;
+}
+
+.header-three .navigation .navbar .navbar-nav li a {
+    color: #fff;
+}
+
+.header-three .navigation .navbar .navbar-nav li a:hover {
+    color: #ffc600;
+}
+
+.header-three .navigation .right-icon ul li a {
+    color: #fff;
+}
+
+.header-three .navigation.sticky {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 0;
+}
+
+.header-three .navigation.sticky .navbar .navbar-nav li a {
+    color: #07294d;
+}
+
+.header-three .navigation.sticky .navbar .navbar-nav li a:hover {
+    color: #ffc600;
+}
+
+.header-three .navigation.sticky .right-icon ul li a {
+    color: #07294d;
+}
+
+.header-three .navigation .navbar .navbar-nav li .sub-menu {
+    background-color: #fff;
+}
+
+.header-three .navigation .navbar .navbar-nav li .sub-menu li a {
+    border-bottom: 1px solid #edeff2;
+    color: #07294d;
+}
+
+.header-three .navigation .navbar .navbar-nav li .sub-menu li a:hover {
+    color: #ffc600;
+}
+
+/*===== HEADER FORE =====*/
+
+.header-four .navigation .navbar .navbar-nav li .sub-menu {
+    background-color: #fff;
+}
+
+.header-four .navigation .navbar .navbar-nav li .sub-menu li a {
+    border-bottom: 1px solid #edeff2;
+    color: #07294d;
+}
+
+.header-four .navigation .navbar .navbar-nav li .sub-menu li a.active,
+.header-four .navigation .navbar .navbar-nav li .sub-menu li a:hover {
+    color: #ffc600;
+}
+
+/*===== SEARCH BOX =====*/
+
+.search-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 41, 77, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+}
+
+.closebtn span {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    display: block;
+}
+
+.closebtn span:nth-of-type(1) {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 11px;
+}
+
+.closebtn span:nth-of-type(2) {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 9px;
+}
+
+.search-box .search-form input {
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid #07294d;
+    color: #07294d;
+    padding-left: 20px;
+    border-radius: 50px;
+}
+
+.search-box .search-form button {
+    position: absolute;
+    top: 50%;
+    left: 72%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    color: #07294d;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*=====================================================
+    2. HEADER PART css end 
+======================================================*/
+
+
+/*=====================================================
+    3. SLIDER PART css start 
+======================================================*/
+
+.single-slider {
+    padding-bottom: 300px;
+}
+
+.slider-cont {
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.slider-cont h1 {
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+.slider-cont p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.slider-cont ul {}
+
+.slider-cont ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.slider-cont ul li:last-child {
+    margin-right: 0;
+}
+
+.slider-active {}
+
+.slider-active .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.4s linear;
+}
+
+.slider-active .next.slick-arrow {
+    left: auto;
+    right: 0;
+}
+
+.slider-active:hover .slick-arrow {
+    left: 30px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.slider-active:hover .next.slick-arrow {
+    left: auto;
+    right: 30px;
+}
+
+.slider-active .slick-arrow i {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    line-height: 48px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.slider-active .slick-arrow i:hover {
+    background-color: #ffc600;
+    border-color: #ffc600;
+}
+
+/*===== Index-2 =====*/
+
+.slider-2 .slider-cont h1 {
+    padding-bottom: 40px;
+}
+
+.slider-2.single-slider {
+    padding-top: 230px;
+    padding-bottom: 250px;
+}
+
+/*=====================================================
+    3. SLIDER PART CSS END
+======================================================*/
+
+
+/*=====================================================
+    4. CATEGORY PART CSS START 
+======================================================*/
+
+.color-1 {
+    background-color: #4886ff;
+}
+
+.color-2 {
+    background-color: #b5d56a;
+}
+
+.color-3 {
+    background-color: #ff6f6f;
+}
+
+.category {
+    background-color: #07294d;
+    border-radius: 10px;
+    margin-top: -150px;
+    position: relative;
+    z-index: 5;
+}
+
+.category-text {}
+
+.category-text h2 {
+    font-size: 36px;
+    color: #fff;
+    padding: 0 50px;
+}
+
+.single-category {
+    padding: 20px 0;
+    border-radius: 5px;
+    display: block;
+}
+
+.single-category .icon {
+    display: inline-block;
+}
+
+.single-category .cont {
+    display: block;
+}
+
+.single-category .cont span {
+    color: #fff;
+    font-size: 18px;
+    padding-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.category-slide {}
+
+.category-slide a {
+    display: block;
+}
+
+.category-slide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.category-slide .prev.slick-arrow {
+    right: auto;
+    left: -50px;
+}
+
+.category-slide .slick-arrow i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background-color: #557495;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.category-slide .slick-arrow i:hover {
+    background-color: #ffc600;
+}
+
+/*=====================================================
+    4. CATEGORY PART CSS END 
+======================================================*/
+
+
+/*=====================================================
+    5. ABOUT PART CSS START
+======================================================*/
+
+#about-part {
+    position: relative;
+    padding-bottom: 220px;
+}
+
+.about-bg {
+    width: 52%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+}
+
+.about-bg::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 1)));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 1) 100%);
+}
+
+.about-bg img {
+    width: 100%;
+}
+
+.about-cont p {
+    padding-top: 30px;
+}
+
+.about-event {
+    -webkit-box-shadow: 0px 0px 191px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 0px 191px 0px rgba(0, 0, 0, 0.06);
+    padding: 65px 70px 37px;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.about-event .event-title h3 {
+    font-size: 36px;
+    color: #000;
+    padding-bottom: 5px;
+}
+
+.about-event ul li .single-event {
+    padding: 25px 0;
+    border-bottom: 1px solid #cecece;
+}
+
+.about-event ul li:last-child .single-event {
+    border-bottom: 0;
+}
+
+.about-event ul li .single-event span {
+    font-size: 14px;
+    color: #8a8a8a;
+    margin-right: 20px;
+}
+
+.about-event ul li .single-event span i {
+    color: #ffc600;
+    margin-right: 3px;
+}
+
+.about-event ul li .single-event a {
+    display: block;
+}
+
+.about-event ul li .single-event a h4 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: #000;
+    font-size: 24px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.about-event ul li .single-event a:hover h4 {
+    color: #ffc600;
+}
+
+/*=====================================================
+    5. ABOUT PART CSS END
+======================================================*/
+
+
+/*=====================================================
+    6. APPLY PART CSS START
+======================================================*/
+
+.apply {
+    margin-top: -100px;
+    position: relative;
+}
+
+.apply-color-1 {
+    background-color: #07294d;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.apply-color-2 {
+    background-color: #092e56;
+}
+
+.apply-color-3 {
+    background-color: #093564;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.apply .apply-cont {
+    padding: 45px 40px 50px;
+}
+
+.apply .apply-cont h3 {
+    font-size: 25px;
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+.apply .apply-cont p {
+    color: #fff;
+    padding-bottom: 45px;
+}
+
+.apply .apply-cont .main-btn:hover {
+    border-color: #ffc600;
+}
+
+/*=====================================================
+    6. APPLY PART CSS END
+======================================================*/
+
+
+/*=====================================================
+    7. COURSE PART CSS START 
+======================================================*/
+
+.single-course {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.single-course > .thum {}
+
+.single-course .thum .image {
+    overflow: hidden;
+}
+
+.single-course .thum .image img {
+    width: 100%;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.single-course:hover .thum .image img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.single-course .cont {
+    padding-top: 28px;
+    padding-bottom: 34px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.single-course .cont h4 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #000;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.single-course .cont h4:hover {
+    color: #ffc600;
+}
+
+.single-course .course-teacher {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.single-course .course-teacher > .thum {
+    display: inline-block;
+}
+
+.single-course .course-teacher > .thum img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.single-course .course-teacher .name {
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    bottom: 13px;
+}
+
+.single-course .course-teacher .name a h6 {
+    font-size: 15px;
+    color: #24486e;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.single-course .course-teacher .name a:hover h6 {
+    color: #ffc600;
+}
+
+.course-slide {}
+
+.course-slide .slick-arrow {
+    position: absolute;
+    top: -125px;
+    right: 0;
+}
+
+.course-slide .prev.slick-arrow {
+    left: auto;
+    right: 50px;
+}
+
+.course-slide .slick-arrow i {
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    border-radius: 5px;
+    color: #000;
+    border: 2px solid #aaaaaa;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.course-slide .slick-arrow:hover i {
+    border-color: #ffc600;
+    background-color: #ffc600;
+}
+
+/*=====================================================
+    7. COURSE PART CSS END 
+======================================================*/
+
+
+/*=====================================================
+    8. VIDEO FEATURES PART CSS START 
+======================================================*/
+#video-part {
+    background-color: #07294d;
+}
+
+#video-part .section-title h5,
+#video-part .section-title h2 {
+    color: #fff;
+}
+
+#video-part .products-btn .main-btn:hover {
+    background: #07294d;
+    border: 1px solid #ffc600;
+}
+
+#video-part .video-slide .vy {
+    position: relative;
+}
+
+#video-part .video-slide .vy img {
+    border-radius: 5px;
+    height: 190px !important;
+}
+
+#video-part .video-slide .vy .fa.fa-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 12px;
+    background: red;
+    padding: 7px 14px 7px 17px;
+    border-radius: 5px;
+}
+
+#video-part .slick-arrow {
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#video-part .prev.slick-arrow {
+    left: -35px;
+}
+
+#video-part .next.slick-arrow {
+    right: -35px;
+}
+
+#video-part .slick-arrow i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background-color: #557495;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+/*=====================================================
+    8. VIDEO FEATURES PART CSS END 
+======================================================*/
+
+/*=====================================================
+    9. NEWS PART CSS START 
+======================================================*/
+
+.single-news {}
+
+.single-news .news-thum {}
+
+.single-news .news-thum img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.single-news .news-cont {}
+
+.single-news .news-cont ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.single-news .news-cont ul li:last-child {
+    margin-right: 0;
+}
+
+.single-news .news-cont ul li a {
+    color: #8a8a8a;
+    font-size: 15px;
+}
+
+.single-news .news-cont ul li a i {
+    color: #ffc600;
+    margin-right: 8px;
+}
+
+.single-news .news-cont ul li a span {
+    color: #07294d;
+}
+
+.single-news .news-cont a {
+    display: block;
+}
+
+.single-news .news-cont a h3 {
+    font-size: 24px;
+    color: #000;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.single-news .news-cont a:hover h3 {
+    color: #ffc600;
+}
+
+.news-list .news-cont h3 {
+    font-size: 20px;
+}
+
+.news-list .news-cont ul li a {
+    font-size: 14px;
+}
+
+/*=====================================================
+    9. NEWS PART CSS END 
+======================================================*/
+
+
+/*=====================================================
+    10. FOOTER PART CSS START 
+======================================================*/
+
+.footer-top {
+    background-color: #07294d;
+}
+
+.footer-about {
+    padding-right: 50px;
+}
+
+.footer-about .logo img {
+    border-radius: 15%;
+    width: 55%;
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    margin-left: 11px;
+}
+
+.footer-about p {
+    color: #fff;
+    padding-top: 15px;
+}
+
+.footer-about ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-about ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-about ul li a {
+    width: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #021d3a;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.footer-about ul li a:hover {
+    background-color: #ffc600;
+    color: #021d3a;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.footer-title h6 {
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer-link {
+    overflow: hidden;
+}
+
+.footer-link ul {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+.footer-link ul li {
+    line-height: 35px;
+}
+
+.footer-link ul li a {
+    color: #fff;
+    font-size: 15px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.footer-link ul li a i {
+    margin-right: 8px;
+    color: #ffc600;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.footer-link ul li a:hover {
+    color: #ffc600;
+}
+
+.footer-link ul li a:hover i {
+    margin-right: 15px;
+}
+
+.support ul {
+    float: none;
+    width: 100%;
+}
+
+.footer-address ul li {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.footer-address ul li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-address ul li .icon i {
+    font-size: 18px;
+    color: #ffc600;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.footer-address ul li .cont {
+    padding-left: 35px;
+}
+
+.footer-address ul li .cont p {
+    color: #fff;
+}
+
+.footer-copyright {
+    background-color: #021d3a;
+}
+
+.footer-copyright .copyright p {
+    color: #fff;
+}
+
+.footer-copyright .copyright p span {
+    font-weight: 600;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    background-color: #ffc600;
+    border: 1px solid #021d3a;
+    color: #fff;
+    font-size: 28px;
+    border-radius: 5px;
+    z-index: 99;
+    text-align: center;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    display: none;
+}
+
+.back-to-top:hover {
+    color: #fff;
+    border: 1px solid #ffc600;
+    background-color: #021d3a;
+}
+
+/*=====================================================
+    10. FOOTER PART CSS END 
+======================================================*/
+
+
+/*=====================================================
+    11. CATEGORY PART-2 CSS START **** index-2.html ****
+======================================================*/
+
+.category-2-items {}
+
+.category-2-items .single-items {
+    position: relative;
+}
+
+.category-2-items .single-items .items-image {
+    position: relative;
+}
+
+.category-2-items .single-items .items-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.category-2-items .single-items .items-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 41, 77, 0.6);
+    border-radius: 5px;
+}
+
+.category-2-items .single-items .items-cont {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.category-2-items .single-items .items-cont h5 {
+    color: #fff;
+    font-size: 18px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.category-2-items .single-items .items-cont span {
+    font-size: 14px;
+    color: #fff;
+}
+
+.category-2-items .single-items .items-cont h5:hover {
+    color: #ffc600;
+}
+
+.category-form {
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 75px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 75px 0px rgba(0, 0, 0, 0.1);
+    margin-top: -154px;
+}
+
+.category-form .form-title {
+    background-color: #07294d;
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+.category-form .form-title h3 {
+    color: #ffc600;
+    font-size: 36px;
+}
+
+.category-form .form-title span {
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.category-form .main-form {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: #fff;
+}
+
+.category-form .main-form .single-form {
+    margin-top: 20px;
+}
+
+.category-form .main-form .single-form input {
+    width: 100%;
+    height: 60px;
+    padding: 0 30px;
+    font-size: 15px;
+    color: #8a8a8a;
+    border: 1px solid #a1a1a1;
+    border-radius: 5px;
+}
+
+.category-form .main-form .single-form .main-btn {
+    width: 100%;
+    line-height: 60px;
+    margin-top: 20px;
+}
+
+/*=====================================================
+    11. CATEGORY PART-2 CSS END **** index-2.html ****
+======================================================*/
+
+/*=====================================================
+    12. COURSE PART-2 CSS START **** index-2.html ****
+======================================================*/
+
+.single-course-2 {}
+
+.single-course-2 > .thum {
+    position: relative;
+}
+
+.single-course-2 > .thum .image > img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.single-course-2 > .thum .course-teacher {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 25px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.single-course-2 > .thum .course-teacher > .thum {
+    display: inline-block;
+}
+
+.single-course-2 > .thum .course-teacher > .thum img {
+    border-radius: 50%;
+}
+
+.single-course-2 > .thum .course-teacher .name {
+    display: inline-block;
+    margin-left: 5px;
+    bottom: 13px;
+}
+
+.single-course-2 > .thum .course-teacher .name h6 {
+    color: #fff;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.single-course-2 > .thum .course-teacher .name h6:hover {
+    color: #ffc600;
+}
+
+.single-course-2 .cont {
+    padding-top: 25px;
+}
+
+.single-course-2 .cont h4 {
+    font-weight: 600;
+    font-weight: 24px;
+    color: #000;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.single-course-2 .cont h4:hover {
+    color: #ffc600;
+}
+
+/*=====================================================
+    12. COURSE PART-2 CSS END **** index-2.html ****
+======================================================*/
+
+
+/*=====================================================
+    13. COUNTER PART CSS START **** index-2.html ****
+======================================================*/
+
+.single-counter {
+    position: relative;
+    z-index: 5;
+}
+
+.single-counter span {
+    font-size: 36px;
+    color: #ffc600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.single-counter p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 15px;
+}
+
+/*=====================================================
+    13. COUNTER PART CSS END **** index-2.html ****
+======================================================*/
+
+
+/*=====================================================
+    14. EVENT PART-2 CSS START **** index-2.html ****
+======================================================*/
+
+.event-bg {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.event-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(7, 41, 77, 0.3)), color-stop(10%, rgba(7, 41, 77, 0.3)), to(rgba(7, 41, 77, 1)));
+    background: linear-gradient(to right, rgba(7, 41, 77, 0.3) 0%, rgba(7, 41, 77, 0.3) 10%, rgba(7, 41, 77, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d07294d', endColorstr='#07294d', GradientType=1);
+}
+
+.event-2 .event-title h3 {
+    font-size: 36px;
+    color: #fff;
+    padding-bottom: 5px;
+}
+
+.event-2 ul li .single-event {
+    padding: 25px 0;
+    border-bottom: 1px solid #cecece;
+}
+
+.event-2 ul li:last-child .single-event {
+    border-bottom: 0;
+}
+
+.event-2 ul li .single-event span {
+    font-size: 14px;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.event-2 ul li .single-event span i {
+    color: #ffc600;
+    margin-right: 3px;
+}
+
+.event-2 ul li .single-event a {
+    display: block;
+}
+
+.event-2 ul li .single-event a h4 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 24px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.event-2 ul li .single-event a:hover h4 {
+    color: #ffc600;
+}
+
+/*=====================================================
+    14. EVENT PART-2 CSS END **** index-2.html ****
+======================================================*/
+
+
+/*=====================================================
+    15. COUNT DOWN PART CSS START
+======================================================*/
+
+.count-down-cont {
+    position: relative;
+    z-index: 5;
+}
+
+.count-down-cont h3 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.count-down-cont h2 {
+    font-size: 72px;
+    color: #ffc600;
+    font-weight: 700;
+    padding-bottom: 37px;
+}
+
+.count-down-time {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.count-down-time .single-count {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: 25%;
+}
+
+.count-down-time .single-count .number {
+    font-size: 72px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: block;
+}
+
+.count-down-time .single-count .title {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    display: block;
+}
+
+.category-form-3 {
+    margin-top: 0;
+    position: relative;
+    z-index: 5;
+}
+
+.category-form-3 .form-title {
+    background-color: #ffc600;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.category-form-3 .form-title h3 {
+    color: #07294d;
+}
+
+.category-form-3 .form-title span {
+    font-weight: 600;
+}
+
+.category-form-3 .main-btn {
+    color: #fff;
+}
+
+.category-form-3 .main-btn:hover {
+    color: #ffc600;
+    border-color: #07294d;
+}
+
+/*=====================================================
+    15. COUNT DOWN PART CSS END
+======================================================*/
+
+
+/*=====================================================
+    16. PAGE BANNER  PART CSS START 
+======================================================*/
+
+.page-banner-cont {
+    position: relative;
+    z-index: 5;
+}
+
+.page-banner-cont h2 {
+    font-size: 52px;
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+.page-banner-cont .breadcrumb {
+    margin: 0;
+    background: none;
+    padding: 0;
+}
+
+.page-banner-cont .breadcrumb .breadcrumb-item {
+    color: #ffc600;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.page-banner-cont .breadcrumb .breadcrumb-item a {
+    color: #fff;
+}
+
+.page-banner-cont .breadcrumb-item + .breadcrumb-item::before {
+    color: #fff;
+    content: "/";
+    font-size: 18px;
+}
+
+/*=====================================================
+    16. PAGE BANNER  PART CSS END 
+======================================================*/
+
+
+/*=====================================================
+    17. ABOUT PAGE PART CSS START **** about.html ****
+======================================================*/
+
+.about-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about-single-items {}
+
+.about-single-items span {
+    font-size: 60px;
+    color: #dbdbdb;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 46px;
+    padding-bottom: 22px;
+}
+
+.about-single-items h4 {
+    color: #000;
+    font-size: 24px;
+    padding-bottom: 25px;
+}
+
+/*=====================================================
+    17. ABOUT PAGE PART CSS END **** about.html ****
+======================================================*/
+
+
+/*=====================================================
+    18. COURSES PAGE PART CSS START **** course.html ****
+======================================================*/
+
+.tab-content {}
+
+.tab-content .single-course .course-teacher .name {
+    bottom: 0;
+}
+
+.courses-top-search {
+    background-color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.courses-top-search .nav {
+    margin-top: 5px;
+}
+
+.courses-top-search .nav .nav-item {
+    margin-right: 15px;
+    font-size: 15px;
+    color: #8a8a8a;
+}
+
+.courses-top-search .nav .nav-item a {
+    font-size: 16px;
+    color: #8a8a8a;
+}
+
+.courses-top-search .nav .nav-item a.active {
+    color: #ffc600;
+}
+
+.courses-search {
+    position: relative;
+}
+
+.courses-search input {
+    height: 30px;
+    width: 240px;
+    background-color: #f6f6f6;
+    border: 0;
+    color: #8a8a8a;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.courses-search button {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    padding: 0;
+    height: 30px;
+    font-size: 15px;
+    color: #8a8a8a;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+#courses-list .single-course .thum .price {
+    right: -25px;
+    bottom: auto;
+    top: 30px;
+}
+
+.courses-pagination {}
+
+.courses-pagination .pagination {}
+
+.courses-pagination .pagination .page-item {
+    margin: 0 5px;
+}
+
+.courses-pagination .pagination .page-item a {
+    font-size: 15px;
+    color: #07294d;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    text-align: center;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.courses-pagination .pagination .page-item a.active,
+.courses-pagination .pagination .page-item a:hover {
+    background-color: #ffc600;
+    border-color: #ffc600;
+}
+
+/*=====================================================
+    18. COURSES PAGE PART CSS END **** course.html ****
+======================================================*/
+
+
+/*=====================================================
+    19. EVENT PAGE PART CSS START **** events.html ****
+======================================================*/
+
+.single-event-list {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.single-event-list .event-thum {
+    width: 38%;
+}
+
+.single-event-list .event-thum img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.single-event-list .event-cont {
+    width: 62%;
+    padding-left: 30px;
+}
+
+.single-event-list .event-cont span {
+    font-size: 14px;
+    color: #8a8a8a;
+    margin-right: 20px;
+}
+
+.single-event-list .event-cont span i {
+    color: #ffc600;
+    margin-right: 3px;
+}
+
+.single-event-list .event-cont a {
+    display: block;
+}
+
+.single-event-list .event-cont a h4 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: #000;
+    font-size: 20px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.single-event-list .event-cont a:hover h4 {
+    color: #ffc600;
+}
+
+/*=====================================================
+    19. EVENT PAGE PART CSS END **** events.html ****
+======================================================*/
+
+
+/*=====================================================
+    20. BLOG PAGE PART CSS START **** blog.html **** 
+======================================================*/
+
+.single-blog {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.single-blog .blog-thum img {
+    width: 100%;
+}
+
+.single-blog .blog-cont {
+    padding: 40px 50px;
+    background-color: #fff;
+}
+
+.single-blog .blog-cont a {
+    display: block;
+}
+
+.single-blog .blog-cont h3 {
+    font-size: 36px;
+    color: #000;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.single-blog .blog-cont a:hover h3 {
+    color: #ffc600;
+}
+
+.single-blog .blog-cont ul {
+    padding: 20px 0;
+}
+
+.single-blog .blog-cont ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.single-blog .blog-cont ul li:last-child {
+    margin-right: 0;
+}
+
+.single-blog .blog-cont ul li a {
+    font-size: 15px;
+    color: #8a8a8a;
+}
+
+.single-blog .blog-cont ul li a i {
+    color: #ffc600;
+    margin-right: 5px;
+}
+
+.single-blog .blog-cont p {}
+
+.sidebar {}
+
+.sidebar .sidebar-search {
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.sidebar .sidebar-search form {
+    position: relative;
+}
+
+.sidebar .sidebar-search form input {
+    width: 100%;
+    height: 45px;
+    padding: 0 25px;
+    background-color: #f6f6f6;
+    color: #8a8a8a;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 0;
+}
+
+.sidebar .sidebar-search form button {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 16px;
+    color: #8a8a8a;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.sidebar .categories {
+    background-color: #fff;
+    padding: 30px 35px 25px;
+    border-radius: 5px;
+}
+
+.sidebar .categories h4,
+.sidebar .sidebar-post h4 {
+    font-size: 24px;
+    color: #07294d;
+}
+
+.sidebar .categories ul {
+    padding-top: 15px;
+}
+
+.sidebar .categories ul li {
+    line-height: 40px;
+}
+
+.sidebar .categories ul li a {
+    color: #8a8a8a;
+    font-weight: 15;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.sidebar .categories ul li a:hover {
+    color: #ffc600;
+}
+
+.sidebar .sidebar-post {
+    padding: 30px 35px 35px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.sidebar .sidebar-post ul {
+    padding-top: 10px;
+}
+
+.sidebar .sidebar-post ul li a {
+    display: block;
+    margin-top: 30px;
+}
+
+.sidebar .sidebar-post ul li a .single-post {
+    overflow: hidden;
+}
+
+.sidebar .sidebar-post ul li a .single-post .thum {
+    float: left;
+    padding-right: 20px;
+}
+
+.sidebar .sidebar-post ul li a .single-post .thum img {
+    border-radius: 5px;
+}
+
+.sidebar .sidebar-post ul li a .single-post .cont {}
+
+.sidebar .sidebar-post ul li a .single-post .cont h6 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+    padding-bottom: 10px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.sidebar .sidebar-post ul li a .single-post .cont h6:hover {
+    color: #ffc600;
+}
+
+.sidebar .sidebar-post ul li a .single-post .cont span {
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+/*=====================================================
+    20. BLOG PAGE PART CSS END **** blog.html **** 
+======================================================*/
+
+/*============================================================
+    21. BLOG SINGEL PAGE CSS START **** blog-single.html ****
+=============================================================*/
+
+.blog-details .cont {
+    padding: 40px 50px;
+    background-color: #fff;
+}
+
+.blog-details .cont h3 {
+    font-size: 36px;
+    color: #000;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.blog-details .cont ul {
+    padding: 20px 0;
+}
+
+.blog-details .cont ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.blog-details .cont ul li a {
+    font-size: 15px;
+    color: #8a8a8a;
+}
+
+.blog-details .cont ul li a i {
+    color: #ffc600;
+    margin-right: 5px;
+}
+
+.blog-details .cont .share {
+    padding-top: 22px;
+    border-bottom: 1px solid #cecece;
+    padding-bottom: 30px;
+}
+
+.blog-details .cont .share li.title {
+    font-size: 18px;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.blog-details .cont .share > li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.blog-details .cont .share li a {}
+
+.blog-details .cont .share li a i {
+    width: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    font-size: 16px;
+    background-color: #ffc600;
+    text-align: center;
+    color: #fff;
+    margin-right: 0;
+}
+
+.blog-details .cont .share li:nth-of-type(2) a i {
+    background-color: #3C5A99;
+}
+
+.blog-details .cont .share li:nth-of-type(3) a i {
+    background-color: #1da1f2;
+}
+
+.blog-details .cont .share li:nth-of-type(4) a i {
+    background-color: #d34836;
+}
+
+.blog-details .cont .share li:nth-of-type(5) a i {
+    background-color: #e4405f;
+}
+
+.blog-details .cont .share li:nth-of-type(6) a i {
+    background-color: #0077B5;
+}
+
+.blog-details .cont .blog-comment .title h3 {
+    font-size: 24px;
+    color: #000;
+}
+
+.blog-details .cont .blog-comment ul {
+    padding: 0;
+}
+
+.blog-details .cont .blog-comment ul li {
+    margin-top: 30px;
+    margin-right: 0;
+}
+
+.blog-details .cont .blog-comment ul li .replay {
+    padding-left: 75px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.blog-comment .comment {
+    padding-bottom: 25px;
+    position: relative;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.blog-comment .comment .comment-author {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.blog-comment .comment .comment-author .author-thum img {
+    border-radius: 5px;
+}
+
+.blog-comment .comment .comment-author .comment-name {
+    padding-left: 20px;
+}
+
+.blog-comment .comment .comment-author .comment-name h6 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.blog-comment .comment .comment-author .comment-name span {
+    font-size: 15px;
+    color: #8a8a8a;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.blog-comment .comment .comment-replay {
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+.comment-form .form-single {
+    margin-top: 20px;
+}
+
+.comment-form .form-single input,
+.comment-form .form-single textarea {
+    height: 60px;
+    width: 100%;
+    padding: 0 20px;
+    border: 1px solid #b8b8b8;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.comment-form .form-single textarea {
+    height: 120px;
+    resize: none;
+    padding-top: 20px;
+}
+
+/*============================================================
+    21. BLOG SINGEL PAGE CSS END **** blog-single.html ****
+=============================================================*/
+
+
+/*=====================================================
+    22. CONTACT CSS START **** contact.html **** 
+======================================================*/
+
+.contact-from {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.contact-from .main-form {}
+
+.contact-from .main-form .single-form {
+    margin-top: 20px;
+}
+
+.contact-from .main-form .single-form input,
+.contact-from .main-form .single-form textarea {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid #a1a1a1;
+    border-radius: 5px;
+    color: #8a8a8a;
+    font-size: 15px;
+}
+
+.contact-from .main-form .single-form textarea {
+    padding-top: 10px;
+    height: 100px;
+    resize: none;
+}
+
+.form-group {
+    margin: 0;
+}
+
+.list-unstyled li {
+    font-size: 13px;
+    margin-left: 2px;
+    margin-top: 5px;
+    color: #f00;
+}
+
+p.form-message.success,
+p.form-message.error {
+    font-size: 16px;
+    color: #353535;
+    background: #ddd;
+    padding: 10px 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.contact-address {
+    background-color: #fff;
+    padding: 20px 50px 50px;
+    border-radius: 5px;
+}
+
+.contact-address ul li {
+    padding-top: 30px;
+}
+
+.contact-address ul li .single-address {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contact-address ul li .single-address .icon i {
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    border: 1px solid #07294d;
+    color: #07294d;
+    font-size: 24px;
+    text-align: center;
+    background: #ffc600;
+}
+
+.contact-address ul li .single-address .cont {
+    padding-left: 20px;
+}
+
+.contact-address ul li .single-address .cont p {}
+
+.map {}
+
+.map #contact-map {
+    width: 100%;
+    height: 225px;
+}
+
+.map.map-big #contact-map {
+    width: 100%;
+    height: 415px;
+}
+
+.contact-address .contact-heading {
+    padding-top: 35px;
+}
+
+.contact-address .contact-heading h5 {
+    padding-bottom: 15px;
+}
+
+/*=====================================================
+    22. CONTACT CSS END **** contact.html **** 
+======================================================*/
+
+
+/*=====================================================
+    23. FAQ PART CSS START **** faq.html **** 
+======================================================*/
+
+.faq-accordion-cont .title h6 {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 30px;
+}
+
+.faq-accordion-cont .accordion {
+    border: 0;
+}
+
+.faq-accordion-cont .accordion .card {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #cecece !important;
+}
+
+.faq-accordion-cont .accordion .card:last-child {
+    border-bottom: 0 !important;
+}
+
+.faq-accordion-cont .accordion .card .card-header {
+    padding: 0;
+    border-bottom: 0;
+}
+
+.faq-accordion-cont .accordion .card .card-header a {
+    overflow: hidden;
+    display: block;
+    padding: 17px 25px;
+    background-color: #07294d;
+}
+
+.faq-accordion-cont .accordion .card .card-header a.collapsed {
+    background-color: #fff;
+    border: none;
+}
+
+.faq-accordion-cont .accordion .card .card-header a::before,
+.faq-accordion-cont .accordion .card .card-header a.collapsed::before {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.faq-accordion-cont .accordion .card .card-header a.collapsed:before {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    color: #8a8a8a;
+}
+
+.faq-accordion-cont .accordion .card .card-header a ul li {
+    display: inline-block;
+}
+
+.faq-accordion-cont .accordion .card .card-header a ul li:last-child {
+    float: right;
+}
+
+.faq-accordion-cont .accordion .card .card-header a ul li > i {
+    color: #ffc600;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.faq-accordion-cont .accordion .card .card-header a ul li > .lecture {
+    font-size: 15px;
+    color: #8a8a8a;
+}
+
+.faq-accordion-cont .accordion .card .card-header a ul li > .head {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 15px;
+    color: #fff;
+}
+
+.faq-accordion-cont .accordion .card .card-header a.collapsed ul li > .head {
+    color: #07294d;
+}
+
+.faq-accordion-cont .accordion .card .card-header a ul li > .time {
+    font-size: 15px;
+    color: #8a8a8a;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.faq-accordion-cont .accordion .card .card-header a ul li > .time i {
+    margin-right: 5px;
+}
+
+.faq-accordion-cont .accordion .card .card-body {
+    padding: 30px;
+}
+
+/*=====================================================
+    23. FAQ PART CSS END **** faq.html **** 
+======================================================*/
+
+
+/*===========================================================
+    24. PRIVACY POLICY PART CSS START **** policy.html **** 
+============================================================*/
+
+.privacy-desc p {
+    margin-bottom: 25px;
+}
+
+.privacy-list ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.privacy-list ul li {
+    padding: 6px 0;
+}
+
+.privacy-list ul li a {
+    color: #07294d;
+    font-weight: 700;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.privacy-list ul li a:hover {
+    color: #ffc600;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+/*===========================================================
+    24. PRIVACY POLICY PART CSS END **** policy.html **** 
+============================================================*/
+
+
+/*===========================================================
+    25. LOGIN/REGISTER PART CSS START **** policy.html ****
+============================================================*/
+
+.signup-content {
+    background: #fff;
+    border-radius: 10px;
+    padding: 50px 55px;
+    margin: 0 50px;
+}
+
+.form-group {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    width: 100%;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    padding: 15px 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 500;
+    color: #07294d;
+}
+
+.main-btn.register-submit {
+    width: 170px;
+}
+
+.label-agree-term {
+    font-size: 15px;
+    color: #555;
+}
+
+.term-service {
+    color: #07294d;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+a.term-service:hover {
+    color: #ffc600;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.loginhere {
+    color: #555;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.loginhere-link {
+    font-weight: 700;
+    color: #07294d;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+a.loginhere-link:hover {
+    color: #ffc600;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.field-icon {
+    float: right;
+    margin-right: 17px;
+    margin-top: -32px;
+    position: relative;
+    z-index: 2;
+    color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .signup-content {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .signup-content {
+        margin: 0;
+    }
+}
+
+/*===========================================================
+    25. LOGIN/REGISTER PART CSS END **** policy.html ****
+============================================================*/

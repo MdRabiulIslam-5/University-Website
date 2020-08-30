@@ -1,0 +1,24 @@
+/*
+.nice-number {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: stretch
+}
+
+.nice-number input {
+    vertical-align: middle;
+    -moz-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0;
+    text-align: center
+}
+
+.nice-number input::-webkit-inner-spin-button,
+.nice-number input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}*/
